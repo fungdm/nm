@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Management</h1>
+
+        <!-- Add Employee Form -->
+        <div class="form-section">
+            <h2>Add Employee</h2>
+            <form id="addEmployeeForm">
+                <input type="text" id="employeeName" placeholder="Employee Name" required>
+                <input type="text" id="employeeDepartment" placeholder="Department" required>
+                <button type="submit" class="btn">Add Employee</button>
+            </form>
+        </div>
+
+        <!-- Remove Employee Section -->
+        <div class="form-section">
+            <h2>Remove Employee</h2>
+            <form id="removeEmployeeForm">
+                <input type="text" id="employeeId" placeholder="Employee ID" required>
+                <button type="submit" class="btn btn-danger">Remove Employee</button>
+            </form>
+        </div>
+
+        <!-- Employee List Section -->
+        <div class="form-section">
+            <h2>Employee List</h2>
+            <button id="refreshEmployees" class="btn">Refresh List</button>
+            <table id="employeeTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Employee rows will be populated here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Response Section -->
+        <div id="response" class="response-section"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

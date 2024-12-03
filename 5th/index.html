@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Book Management</h1>
+
+        <!-- Add a Book Form -->
+        <div class="form-container">
+            <h2>Add a Book</h2>
+            <form id="addBookForm">
+                <input type="text" id="title" placeholder="Title" required>
+                <input type="text" id="author" placeholder="Author" required>
+                <input type="number" id="year" placeholder="Publication Year" required>
+                <button type="submit">Add Book</button>
+            </form>
+        </div>
+
+        <!-- Search Books -->
+        <div class="search-container">
+            <h2>Search Books</h2>
+            <input type="text" id="searchTitle" placeholder="Search by Title">
+            <input type="text" id="searchAuthor" placeholder="Search by Author">
+            <input type="number" id="searchYear" placeholder="Search by Year">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <!-- Display All Books -->
+        <div class="books-container">
+            <h2>Books List</h2>
+            <ul id="booksList"></ul>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

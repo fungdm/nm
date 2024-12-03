@@ -1,0 +1,27 @@
+POST http://localhost:8080/api/books
+Content-Type: application/json
+
+{
+  "title": "Library Management",
+  "author": "Sabeshragav",
+  "publicationYear": 2023
+}
+
+###
+POST http://localhost:8080/api/books
+Content-Type: application/json
+
+{
+  "title": "Spring Boot Guide",
+  "author": "John Doe",
+  "publicationYear": 2024
+}
+
+###
+GET http://localhost:8080/api/books/title/Spring Boot Guide
+
+
+###
+GET http://localhost:8080/api/books
+
+
